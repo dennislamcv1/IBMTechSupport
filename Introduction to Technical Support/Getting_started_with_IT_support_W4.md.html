@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <center>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IDSNlogo.png" width="300">
+    </center>
+    <h1>Hands-on Lab: Getting Started with Ticketing Systems using the ServiceNow platform</h1>
+    <h3>Estimated effort: 2 hours</h3>
+    <h3>Overview:</h3>
+    <ul>
+      <li>In this hands-on activity, you will become familiar with using a Ticketing or a Helpdesk Support system. You will perform tasks like navigating the ticketing system interface, creating, viewing, searching, updating, &#x26; resolving tickets, as well as creating reports.</li>
+      <li>For this purpose you will use the <strong>Now Platform</strong> from <strong>ServiceNow</strong>. In addition to Customer Support and Helpdesk Management, the cloud-based Now platform can be used for a variety of workflow automation tasks to streamline and optimize customer and employee experiences and includes AI enabled capabilities.</li>
+      <li>You will follow instructions in this reading to sign up and create a ServiceNow ID. Once you have signed up, you will enroll in the activity: <strong>Get Started with the Now Platform Simulator (UI16)</strong>. Then you will use the simulator to perform various support ticket tasks for this activity.</li>
+    </ul>
+    <h3>Objectives:</h3>
+    <p>After completing this lab, you will be able to:</p>
+    <ul>
+      <li>Create a ServiceNow ID</li>
+      <li>Start the Now Platform Simulator</li>
+      <li>Navigate the platform</li>
+      <li>Create records</li>
+      <li>Update and resolve records</li>
+      <li>Receive notifications</li>
+      <li>View, list and search records</li>
+      <li>Generate reports and charts</li>
+    </ul>
+    <blockquote>
+      <p>Note:</p>
+      <ul>
+        <li>Different ticketing system platforms use different terminologies to refer to tickets. These include records, issues, incidents, or other terms. To be consistent with the Now Platform Simulator, in this lab we will use the term "records" to refer to "tickets", which has been used elsewhere in the course.</li>
+      </ul>
+    </blockquote>
+    <h4>Exercise 1: Sign up to the ServiceNow to access the Now Platform Simulator and Get Started with the Course<br></h4>
+    <ol>
+      <li>
+        <p>Click <a href="https://nowlearning.servicenow.com/lxp?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMCS0121ENSkillsNetwork34913304-2022-01-01&#x26;course_id=2843cb2c1b5d249030c3ff72cd4bcbbc&#x26;id=learning_course_prev" target="_blank">Get Started! </a>to see the simulator's home page and begin.</p>
+      </li>
+      <li>
+        <p>Click on the <strong>Sign Up</strong> or <strong>Log in to Start</strong> button to create a free account with ServiceNow. You must have a ServiceNow account to complete this lab.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG1.png" alt="Start page" width="900/"><br>
+        </p>
+      </li>
+    </ol>
+    <blockquote>
+      <p>Note:</p>
+      <ul>
+        <li>If you already have a ServiceNow account, you do not need to sign up again. You may skip to Step 6.</li>
+      </ul>
+    </blockquote>
+    <ol start="3">
+      <li>
+        <p>On the sign up page, please fill in your information and click the <strong>Sign Up</strong> button.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG2.png" alt="Sign Up" width="600/"><br>
+        </p>
+      </li>
+      <li>
+        <p>Once you sign up, check your email for an account confirmation message from ServiceNow.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG3.png" alt="Sign Up Mail verification" width="600/"><br>
+        </p>
+      </li>
+      <li>
+        <p>Use the email address you used to sign up to validate your account.</p>
+      </li>
+      <li>
+        <p>Enter your email ID and then click on <strong>Next</strong> button.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG4.png" alt="Sign In" width="600/"><br>
+        </p>
+      </li>
+      <li>
+        <p>On the next screen, enter your password and click on the <strong>Sign In</strong> button to sign in.</p>
+      </li>
+      <li>
+        <p>After completing the above process, you will receive a <strong>ServiceNow ID One-time verification code</strong> in your registered email. Enter the code from your email into the ServiceNow Additional Email Authentication page, and click the <strong>Verify</strong> button.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG5.png" alt="Mail authentication" width="600/"><br>
+        </p>
+      </li>
+    </ol>
+    <blockquote>
+      <p>Note:</p>
+      <ul>
+        <li>If you are redirected to the "Authenticator App" page instead of the above email authentication process, please sign out of <strong>ServiceNow</strong> and clear your browser cache and cookies. Follow the above process again and you should be able to proceed correctly.</li>
+      </ul>
+    </blockquote>
+    <ol start="9">
+      <li>
+        <p>Click <a href="https://nowlearning.servicenow.com/lxp?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMCS0121ENSkillsNetwork34913304-2022-01-01&#x26;course_id=2843cb2c1b5d249030c3ff72cd4bcbbc&#x26;id=learning_course_prev" target="_blank">"Get Started!" </a>to begin using the Now Platform Simulator.</p>
+      </li>
+      <li>
+        <p>The Now Platform Simulator can be started by clicking the <strong>Start</strong> button.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG6.png" alt="Start Simulator" width="900/"><br>
+        </p>
+      </li>
+      <li>
+        <p>You should be re-directed to the Now Platform Simulator, where you will be performing certain tasks on your own instance of the ticketing system.</p>
+      </li>
+    </ol>
+    <h4>Exercise 2: Opening your own instance on the ServiceNow platform:</h4>
+    <ol>
+      <li>
+        <p>On the home page of the course, you will find an option to request your own instance. Please click on the <strong>Request Instance</strong> button to request the instance.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG7.png" alt="Request instance" width="900/"><br><br>
+        </p>
+      </li>
+    </ol>
+    <blockquote>
+      <p>Note:</p>
+      <ul>
+        <li>If you are starting the instance for the first time, it may take upto 5 minutes to load your instance. However, if you are re-opening the instance it may be <strong>Hibernating</strong> , and it could take up to 15 minutes for the instance to start again.<br></li>
+      </ul>
+    </blockquote>
+    <ol start="2">
+      <li>Once your instance is successfully provisioned, click <strong>Open My Instance</strong> to access your instance.</li>
+    </ol>
+    <blockquote>
+      <p>Note:</p>
+      <ul>
+        <li>Once your instance is started, you may complete all of the tasks listed in the simulator tutorial.</li>
+      </ul>
+    </blockquote>
+    <h4>Exercise 3: Complete all tasks given in the course</h4>
+    <p>You have setup your instance in the previous exercise. In this exercise, you will practice using the Now Simulator Platform to search and create records, view them as a list, generate reports and complete the tasks listed in the tutorial.</p>
+    <p>The tasks that you will find in the left navigation pane include:</p>
+    <ul>
+      <li>Toggle the navigator,</li>
+      <li>Change time zone,</li>
+      <li>Switch off notifications,</li>
+      <li>Adjust the look,</li>
+      <li>Add to favorites,</li>
+      <li>Record an incident,</li>
+      <li>Receive work note notifications,</li>
+      <li>Add a comment for customers,</li>
+      <li>Resolve an incident,</li>
+      <li>View a list,</li>
+      <li>Filter,</li>
+      <li>Personalize list,</li>
+      <li>Sort list,</li>
+      <li>Search for a record,</li>
+      <li>View as groups, and</li>
+      <li>Create pie chart.</li>
+    </ul>
+    <ol>
+      <li>
+        <p>To start, perform the first task in the list <strong>Toggle the Navigator</strong>. To execute this task on your instance, please watch the video given on the right-hand side of the task list and read the instructions just below the video on how to perform the task.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG8.png" alt="Lab instructions" width="900/"><br><br>
+        </p>
+      </li>
+      <li>
+        <p>Once you have successfully completed the task on your instance, return to the task page and click on the <strong>Validate Task</strong> button to validate that the task has been completed.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG9.png" alt="Validate Task" width="400/"><br>
+        </p>
+      </li>
+      <li>
+        <p>If the task is performed correctly, the notification <strong>Task validation successful</strong> will appear, and your Simulator score will be updated after each validation.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG10.png" alt="Task completion" width="900/"><br>
+        </p>
+      </li>
+      <li>
+        <p>If you have not successfully completed the task, you will receive a notification about the actions you must take to complete the task successfully.</p>
+      </li>
+      <li>
+        <p>Complete all of the remaining tasks under the task list in <strong>Get Started with the Now Platform Simulator (UI16)</strong>.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG11.png" alt="List of tasks" width="300/"><br>
+        </p>
+      </li>
+      <li>
+        <p>Once you have successfully completed all the tasks, you will see your simulator score as <strong>100% passed</strong> and receive a simulator completion email and badge.</p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/IMG12.png" alt="Simulator completion" width="900/"><br>
+        </p>
+        <p>
+          <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CS0121EN-SkillsNetwork/labs/Module%204/ServiceNowTicketingLab/images/14.course_completed.png" alt="Badge unlocked" width="900/"><br>
+        </p>
+      </li>
+    </ol>
+    <p>Congratulations on completing the lab!</p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022-06-09</td>
+          <td>1.0</td>
+          <td>K Sundararajan</td>
+          <td>Initial version created</td>
+        </tr>
+        <tr>
+          <td>2022-06-09</td>
+          <td>1.1</td>
+          <td>Sapthashree K S</td>
+          <td>Updated Images</td>
+        </tr>
+        <tr>
+          <td>2022-06-14</td>
+          <td>1.2</td>
+          <td>K Sundararajan</td>
+          <td>Updated images and instructions</td>
+        </tr>
+        <tr>
+          <td>2022-06-20</td>
+          <td>1.3</td>
+          <td>K Sundararajan</td>
+          <td>Updated images and instructions</td>
+        </tr>
+        <tr>
+          <td>2022-06-23</td>
+          <td>1.4</td>
+          <td>Sapthashree K S</td>
+          <td>Updated images and instructions</td>
+        </tr>
+        <tr>
+          <td>2022-06-24</td>
+          <td>1.5</td>
+          <td>Rav Ahuja</td>
+          <td>Enhanced instructions</td>
+        </tr>
+        <tr>
+          <td>2022-06-28</td>
+          <td>1.6</td>
+          <td>K Sundararajan</td>
+          <td>Updated images and instructions</td>
+        </tr>
+        <tr>
+          <td>2022-07-06</td>
+          <td>1.7</td>
+          <td>Samaah Sarang</td>
+          <td>Updated images</td>
+        </tr>
+        <tr>
+          <td>2022-07-08</td>
+          <td>1.8</td>
+          <td>K Sundararajan</td>
+          <td>Updated images</td>
+        </tr>
+        <tr>
+          <td>2022-07-12</td>
+          <td>1.9</td>
+          <td>K Sundararajan</td>
+          <td>Updated images</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2022. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>
